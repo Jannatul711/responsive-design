@@ -1,0 +1,33 @@
+*{margin: 0;
+padding: 0;}
+
+.container{margin: 0 auto;
+max-width:1400px;}
+
+.card-area-start{background-color: bisque;}
+
+.card-area{display: grid;
+grid-template-columns: repeat(5,1fr);
+gap: 20px;
+}
+
+.card{color: whitesmoke;
+    background-color: rgb(99, 99, 99);
+    width:0 auto;
+    border: 3px solid rgba(106, 69, 198, 0.824);
+border-radius: 15px;
+border-style: double;}
+
+ .card p{  font-family: "Playwrite HR", cursive;} 
+ span{color: red;
+font-size: 20px;} 
+
+@media screen and (max-width:1024px) {
+    .card-area{grid-template-columns: repeat(4,1fr);}}
+
+@media screen and (max-width:912px) {
+    .card-area{grid-template-columns: repeat(3,1fr);}}
+
+@media screen and (max-width:600px) {
+    .card-area{grid-template-columns: repeat(2,1fr);}}
+
